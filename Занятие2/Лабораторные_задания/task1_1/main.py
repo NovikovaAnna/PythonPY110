@@ -1,4 +1,4 @@
-def task() -> str:
+def task() -> int:
     list_words = [
         "Goldenrod",
         "Purple",
@@ -7,7 +7,7 @@ def task() -> str:
         "Cyan"
     ]
 
-    return min(list_words, key=len)
+    return max(len(word) for word in list_words)
 
 
 if __name__ == "__main__":
